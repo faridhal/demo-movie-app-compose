@@ -22,7 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.faridhal.movieapp.models.Movie
-import com.faridhal.movieapp.ui.theme.MyApplicationTheme
+import com.faridhal.movieapp.ui.theme.MovieAppDemoTheme
 import com.faridhal.movieapp.ui.viewModels.MainViewModel
 import com.gowtham.ratingbar.RatingBar
 import com.gowtham.ratingbar.RatingBarConfig
@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         viewModel.getMovieList()
         setContent {
-            MyApplicationTheme {
+            MovieAppDemoTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),

@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.faridhal.movieapp.models.Movie
-import com.faridhal.movieapp.ui.theme.MyApplicationTheme
+import com.faridhal.movieapp.ui.theme.MovieAppDemoTheme
 import com.gowtham.ratingbar.RatingBar
 import com.gowtham.ratingbar.RatingBarConfig
 import com.skydoves.landscapist.glide.GlideImage
@@ -30,7 +30,7 @@ class DetailMovieActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MyApplicationTheme {
+            MovieAppDemoTheme {
                 Surface(
                     color = MaterialTheme.colors.background
                 ) {
